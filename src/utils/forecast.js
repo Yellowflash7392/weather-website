@@ -9,7 +9,15 @@ const forecast = (latitude,longitude,callback) =>{
         } else if(body.error){
                 callback('unable to find location',undefined)
         }else{
-                callback(undefined, 'temperature is currently ' + body.current.temp_c)
+                console.log(body.current)
+                forcast={
+                        temprature : body.current.temp_c,
+                        text : body.current.condition.text,
+                        image : body.current.condition.icon,
+                        humid : body.current.humidity,
+                        wind: body.current.wind_kph
+                }
+                callback(undefined, forcast)
         }
     })
 
