@@ -29,14 +29,14 @@ app.get('', (req,res)=>{
 
 app.get('/about', (req, res)=>{
     res.render('about',{
-        title: 'About Me',
+        title: 'About',
         name:'Snehal Chandra'     
     })
 })
 
 app.get('/help',(req, res)=>{
     res.render('help',{
-        helptext: 'this is some helpful text',
+        helptext: 'Try searching for some place which exist or do not search for empty field',
         title: 'Help',
         name: 'Snehal Chandra'
     })

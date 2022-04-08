@@ -1,5 +1,5 @@
 body {
-    color:#333333;
+    color:#000000;
     font-family: arial;
     max-width: 650px;
     margin: 0 auto;
@@ -8,15 +8,23 @@ body {
     display: flex;
     flex-direction:column ;
     min-height: 100vh;
+    background:url('/img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+    /* background: 100%; */    
 }
-
+body:before{
+    opacity: 0.5;
+}
 .main-content {
     flex-grow: 1;
+    /* background-color:rgba(181, 180, 180, 0.54); */
 }
 
 footer {
-    color: #888888;
-    border-top: 1px solid #eeeeee ;
+    color: #333333;
+    border-top: 1px solid #333333 ;
     margin-top: 16px;
     padding: 16px 0;
 }
@@ -32,7 +40,7 @@ h1 {
 }
 
 header a{
-    color: #888888;
+    color: #333333;
     margin-right: 16px;
     text-decoration: none;
 }
